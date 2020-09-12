@@ -1,7 +1,11 @@
 create table role(Id NUMBER(20), name varchar2(255) NOT NULL,primary key(Id));
+
 create table skill(Id NUMBER(20)primary key, description varchar2(255) NULL, name varchar(255) NOT NULL);
+
 create table post_type(Id NUMBER(20)primary key,name varchar2(255) NOT NULL);
+
 create table department(Id NUMBER(20)primary key, name varchar2(255) NOT NULL);
+
 
 create table degree
 (
@@ -46,6 +50,7 @@ Alter table experience
 RENAME COLUMN current TO currentvalue;
 
 desc experience;
+
 create table project
 (
   Id NUMBER(20)primary key,
